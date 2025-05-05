@@ -6,16 +6,18 @@ export default function Loginpage(){
 
     return (
        <div className="w-full h-screen flex">
-        <div className="w-[40%] h-full flex items-center justify-center">
-           <Link to="/cadastro">Cadastrar</Link>
-           <button
-           onclick={() => navigate("/cadastro")}
-           >Cadastrar</button>
-           <button
-            onclick={() => window.location.href = "/cadastro"} 
-            >
-            Cadastrar
-            </button>
+        <div className="w-[40%] h-full flex items-center justify-center ">
+            <div className="w-[60%] h-[40%] p-[45px] flex justify-center flex-col">
+                <h1 className="text-black font-bold text-[20px] w-full h-[60%] ">Faça seu LOGIN</h1>
+
+                <label htmlFor="user" className="text-black">Usuário</label>
+                <input type="usuario" id="user"className="w-full rounded-md p-[10px] text-black m-2" placeholder="user"/>
+
+                <label htmlFor="pass" className="text-black">senha</label>
+                <input type="password" id="pass" className="w-full rounded-md p-[10px] text-black m-2" placeholder="Password" />
+
+                <Link to="/cadastro">Cadastrar-se</Link>
+            </div>
         </div>
         <div className="w-[60%] h-full flex bg-[#6366EE] items-center justify-center rounded-l-lg flex-col">
             <img width={600} src={svg} alt="imagem-animda" />
