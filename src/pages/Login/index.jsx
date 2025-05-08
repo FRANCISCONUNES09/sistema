@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom"
 import svg from "/public/login-animate.svg"
+import { FaRegUserCircle } from "react-icons/fa"
 
 export default function Loginpage(){
     const navigate = useNavigate()
@@ -12,6 +13,8 @@ export default function Loginpage(){
 
                 <label htmlFor="user" className="text-black">Usuário</label>
                 <input type="usuario" id="user"className="w-full rounded-md p-[10px] text-black m-2" placeholder="user"/>
+
+                <FaRegUserCircle />
 
                 <label htmlFor="pass" className="text-black">senha</label>
                 <input type="password" id="pass" className="w-full rounded-md p-[10px] text-black m-2" placeholder="Password" />
